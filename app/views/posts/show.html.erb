@@ -14,7 +14,7 @@
   <%= f.label "Comment" %>
   <%= f.text_field :comment %>
 
-  <%= f.fields_for :comments, post.categories.build do |categories_fields| %>
+  <%= f.fields_for :comments, post.comments.build do |categories_fields| %>
 
     <%= categories_fields.text_field :name %>
   <% end %>
