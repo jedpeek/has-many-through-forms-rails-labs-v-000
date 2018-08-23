@@ -12,11 +12,10 @@
 
 <%= form_for @post do |f| %>
   <%= f.label "Comment" %>
-  <%= f.text_field :comment %>
-
   <%= f.fields_for :comments, post.comments.build do |comment| %>
-
-    <%= comment.text_field :name %>
+    <%= comment.text_field :content %>
+  <% end %>
+  <%= f.submit %>
   <% end %>
 
 <h3>COMMENTS </h3>
