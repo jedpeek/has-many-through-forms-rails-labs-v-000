@@ -1,4 +1,4 @@
 <%= @user.username %>
 <% @user.comments.each do |c| %>
-  <%= link_to c.content, post_path(c.post) %>
+  <%= link_to c.content, post_path(c.post_id) %>
 <% end %>
