@@ -1,5 +1,5 @@
 <ul>
 <% @category.posts.each do |post| %>
-  <li> <%= post.content %> </li>
+  <li> <%= link_to post.title post_path(post) post.content %> </li>
   <% end %>
 </ul>
