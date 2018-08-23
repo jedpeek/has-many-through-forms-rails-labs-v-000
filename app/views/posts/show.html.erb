@@ -3,6 +3,7 @@
 <p>Categories:
   <ul>
   <% @post.categories.each do |c| %>
-  <%= c.name %>
+  <li><%= c.name %></li>
   <% end %>
+</ul>
 </p>
