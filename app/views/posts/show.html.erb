@@ -2,10 +2,10 @@
 <p><%= @post.content %></p>
 <p>Categories:
   <ul>
-  <% @post.categories.each do |c| %>
-  <li><%= c.name %></li>
-  <% end %>
-</ul>
+    <% @post.categories.each do |c| %>
+      <li><%= c.name %></li>
+    <% end %>
+  </ul>
 </p>
 <br><br>
 
@@ -13,4 +13,3 @@
   <ul>
     <li><% @post.comments.each do |c| %></li>
   </ul>
-
