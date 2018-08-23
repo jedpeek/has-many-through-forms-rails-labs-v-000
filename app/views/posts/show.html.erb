@@ -10,8 +10,8 @@
 </p>
 <br><br>
 
-<%= form_for post do |f| %>
-  <%= f.label "Title" %>
+<%= form_for @post do |f| %>
+  <%= f.label "Comment" %>
   <%= f.text_field :title %>
 
   <%= f.label "Content" %>
