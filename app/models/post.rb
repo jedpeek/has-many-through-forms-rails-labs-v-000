@@ -10,6 +10,7 @@ class Post < ActiveRecord::Base
       c = Category.find_or_create_by(name: attributes[:name])
       self.post_categories.build{category: c}
     end
+  end
 
 
 end
