@@ -1,1 +1,3 @@
 <%= @user.name %>
+<% @user.comments.each do |c| %>
+<%= c.content %>
